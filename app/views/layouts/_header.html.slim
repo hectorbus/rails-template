@@ -1,0 +1,40 @@
+header.main-header
+  / Logo
+  = link_to authenticated_root_path, class: 'logo' do
+    span.logo-mini
+      | Logo
+    / logo for regular state and mobile devices
+    span.logo-lg
+      b
+        | Logo
+  / Header Navbar
+  nav.navbar.navbar-static-top role='navigation'
+    / Sidebar toggle button
+    a.sidebar-toggle href='#' data-toggle='offcanvas' role='button'
+      span.sr-only Toggle navigation
+    / Navbar Right Menu
+    .navbar-custom-menu
+      ul.nav.navbar-nav
+        li.language-btn [title="#{t('.select_lang')}"]
+          - if I18n.locale == :es
+            a.first href="javascript:;"
+              i.fa.fa-flag.fa-lg
+              span.hidden-xs
+                =< t('.language')
+            = link_to set_language_english_path do
+              span.flag-icon.flag-icon-us
+              span.hidden-xs
+                =< t('.change_lang')
+          - else
+            a.first href="javascript:;"
+              i.fa.fa-flag.fa-lg
+              span.hidden-xs
+                =< t('.language')
+            = link_to set_language_spanish_path do
+              span.flag-icon.flag-icon-es
+              span.hidden-xs
+                =< t('.change_lang')
+        = render 'layouts/account_dropdown'
+        li
+          a [href="javascript:;" data-toggle="control-sidebar"]
+            i.fa.fa-gears

@@ -1,0 +1,47 @@
+aside.main-sidebar
+  section.sidebar
+    /! Sidebar Menu
+    ul.sidebar-menu
+      li.header MENU
+      li.treeview
+        a href='#'
+          i.fa.fa-share
+          span Link
+          i.fa.fa-angle-left.pull-right
+        ul.treeview-menu
+          li
+            = link_to "<i class='fa fa-circle-o'></i> Link in level 2".html_safe, '#'
+      li.header ADMIN
+      - if has_policy(Role, %w(new index))
+        li.treeview
+          a href='#'
+            i.fa.fa-user-secret
+            span = t('.roles')
+            i.fa.fa-angle-left.pull-right
+          ul.treeview-menu
+            li
+              = link_item "<i class='fa fa-circle-o'></i> #{t '.new_role'}".html_safe, new_role_path
+            li
+              = link_item "<i class='fa fa-circle-o'></i> #{t '.roles'}".html_safe, roles_path
+      - if has_policy(Permission, %w(new index))
+        li.treeview
+          a href='#'
+            i.fa.fa-ban
+            span = t('.permissions')
+            i.fa.fa-angle-left.pull-right
+          ul.treeview-menu
+            li
+              = link_item "<i class='fa fa-circle-o'></i> #{t '.new_permission'}".html_safe, new_permission_path
+            li
+              = link_item "<i class='fa fa-circle-o'></i> #{t '.permissions'}".html_safe, permissions_path
+        - if has_policy(User, %w(new_user index), 'Users::Registration')
+          li.treeview
+            a href='#'
+              i.fa.fa-user
+              span = t('.users')
+              i.fa.fa-angle-left.pull-right
+            ul.treeview-menu
+              li
+                = link_item "<i class='fa fa-circle-o'></i> #{t '.new_user'}".html_safe, new_user_path
+              li
+                = link_item "<i class='fa fa-circle-o'></i> #{t '.users'}".html_safe, user_registrations_path

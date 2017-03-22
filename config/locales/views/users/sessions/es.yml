@@ -1,0 +1,9 @@
+es:
+  users:
+    sessions:
+      new:
+        template: Plantilla
+        sign_in: Iniciar sesión
+        email: Correo
+        password: Contraseña
+        remember: Recuérdame

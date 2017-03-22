@@ -1,0 +1,60 @@
+en:
+  users:
+    registrations:
+      new:
+        title: Template
+        sign_up: Sign up
+        email: Email
+        password: Password
+        confirmation: Password confirmation
+      edit:
+        title: Edit profile
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        current_password: Current password
+        waiting_confirmation: 'Currently waiting confirmation for:'
+        leave_blank:  (leave blank if you don't want to change it)
+        need_password:  (we need your current password to confirm your changes)
+        update: Update
+        cancel_account: Cancel my account
+        back: Back
+        unhappy: 'Unhappy?'
+        resource: user
+        profile: profile
+        profile_image: profile image
+        need_image: You must select an image first
+      index:
+        title: Users
+        resource: the user
+        email: E-mail
+        actions: Actions
+        one: User
+        other: Users
+        role: Role
+        first_name: First name
+        last_name: Last name
+        maiden_name: Mother maiden name
+        username: Username
+      new_user:
+        title: New user
+        resource: user
+        back: Go to users
+      edit_user:
+        resource: user
+        title: Edit user
+        back: Go to users
+      show:
+        back: Go to users
+        email: E-mail
+        role: Role
+        first_name: First name
+        last_name: Last name
+        maiden_name: Mother maiden name
+        username: Username
+      change_password:
+        change_password: Change password
+        resource: password
+  breadcrumbs:
+    users: Users
+    change_password: Change password %{username}

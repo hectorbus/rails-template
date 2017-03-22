@@ -1,0 +1,33 @@
+section.content
+  .row
+    .col-xs-12
+      .box.box-primary
+        .box-header.with-border
+          h3.box-title
+            = @user.email
+        .box-body
+          strong = t('.email')
+          p.text-muted
+            = @user.email
+          strong = t('.username')
+          p.text-muted
+            = @user.username
+          strong = t('.first_name')
+          p.text-muted
+            = @user.first_name
+          strong = t('.last_name')
+          p.text-muted
+            = @user.last_name
+          strong = t('.maiden_name')
+          p.text-muted
+            = @user.maiden_name
+          strong = t('.role')
+          p.text-muted
+            = @user.role_name
+        .box-footer
+          = link_to edit_user_path(@user), class: 'btn btn-primary btn-flat', title: t('helpers.edit') do
+            i.fa.fa-pencil-square-o
+            =< t('helpers.edit')
+          = link_to user_registrations_path, class: 'btn btn-default btn-flat' do
+            i.fa.fa-list
+            =< t('.back')

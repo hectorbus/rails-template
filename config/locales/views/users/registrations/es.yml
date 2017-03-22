@@ -1,0 +1,60 @@
+es:
+  users:
+    registrations:
+      new:
+        title: Plantilla
+        sign_up: Registrarse
+        email: Correo
+        password: Contraseña
+        confirmation: Confirmar contraseña
+      edit:
+        title: Editar perfil
+        email: Correo electrónico
+        password: Contraseña
+        password_confirmation: Confirmar contraseña
+        current_password: Contraseña actual
+        waiting_confirmation: 'Esperando confirmación para:'
+        leave_blank:  (dejar en blanco si no requieres cambiarla)
+        need_password:  (Necesitamos tu contraseña actual para confirmar tus cambios)
+        update: Actualizar
+        cancel_account: Cancelar mi cuenta
+        back: Regresar
+        unhappy: '¿Descontento?'
+        resource: usuario
+        profile: perfil
+        profile_image: imagen de perfil
+        need_image: Debes seleccionar una imagen primero
+      index:
+        title: Usuarios
+        resource: el usuario
+        email: Correo electrónico
+        actions: Acciones
+        one: Usuario
+        other: Usuarios
+        role: Rol
+        first_name: Nombre
+        last_name: Apellido paterno
+        maiden_name: Apellido materno
+        username: Nombre de usuario
+      new_user:
+        title: Nuevo usuario
+        resource: usuario
+        back: Ir a usuarios
+      edit_user:
+        resource: usuario
+        title: Editar usuario
+        back: Ir a usuarios
+      show:
+        back: Ir a usuarios
+        email: Correo electrónico
+        role: Rol
+        first_name: Nombre
+        last_name: Apellido paterno
+        maiden_name: Apellido materno
+        username: Nombre de usuario
+      change_password:
+        change_password: Cambiar contraseña
+        resource: contraseña
+  breadcrumbs:
+    users: Usuarios
+    change_password: Cambiar contraseña %{username}

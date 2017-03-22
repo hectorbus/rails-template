@@ -1,0 +1,22 @@
+es:
+  layouts:
+    header:
+      language: Idioma
+      select_lang: Seleccione idioma
+      change_lang: English
+    footer:
+      rights: Todos los derechos reservados.
+    account_dropdown:
+      profile: Perfil
+      log_out: Cerrar sesión
+    side_menu:
+      new_role: Nuevo rol
+      roles: Roles
+      new_permission: Nuevo permiso
+      permissions: Permisos
+      users: Usuarios
+      new_user: Nuevo usuario
+    control_side_bar:
+      skins: Carátulas
+      home: Inicio
+      stats: Estadísticas

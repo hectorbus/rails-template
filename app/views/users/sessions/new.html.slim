@@ -1,0 +1,29 @@
+- @title = t('.sign_in')
+.login-box
+  .login-logo
+    b 
+      = t('.template')
+  .login-box-body
+    p.login-box-msg
+      = t('.sign_in')
+    = form_for resource, as: resource_name, url: session_path(resource_name), layout: :horizontal do |f|
+      .form-group.has-feedback
+        = devise_error_messages!
+      .form-group.has-feedback
+        = f.email_field :email, autofocus: true, class: 'form-control', placeholder: t('.email')
+        span.glyphicon.glyphicon-envelope.form-control-feedback
+      .form-group.has-feedback
+        = f.password_field :password, autocomplete: 'off', class: 'form-control', placeholder: t('.password')
+        span.glyphicon.glyphicon-lock.form-control-feedback
+      .row
+        .col-xs-6
+          .checkbox.icheck
+            label
+              - if devise_mapping.rememberable?
+                = f.check_box :remember_me, class: 'icheck-me', data: {skin: 'square', color: 'purple'}
+                =< t('.remember')
+        .col-xs-6
+          = f.submit t('.sign_in'), class: 'btn bg-purple btn-block btn-flat'
+
+    p.text-right
+      = render partial: 'users/shared/links'

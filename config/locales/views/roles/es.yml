@@ -1,0 +1,35 @@
+es:
+  roles:
+    index:
+      title: Roles
+      resource: el rol
+      name: Nombre
+      description: Descripción
+      key: Llave
+      scope: Alcance
+      one: Rol
+      other: Roles
+      permissions: Permisos
+      new_role: Nuevo rol
+    form:
+      title: Rol
+      role_key: Clave de rol
+      resource: rol
+      back: Ir a roles
+      name: Nombre
+      description: Descripción
+      key: Llave
+    new:
+      title: Nuevo rol
+    edit:
+      title: Editar rol
+    show:
+      key: Llave
+      description: Descripción
+      back: Ir a roles
+      delete_confirmation: Estas seguro que deseas eliminar el rol
+    role_permissions:
+      save_permissions: Guardar permisos
+      back: Ir a roles
+  breadcrumbs:
+    roles: Roles
